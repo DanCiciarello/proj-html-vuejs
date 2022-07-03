@@ -47,47 +47,31 @@
                     </button>
                     <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNavDropdown">
                         <ul class="navbar-nav">
-                            <li class="nav-item dropdown pe-4">
-                                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false" aria-current="page">
-                                    Home
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="#">Sub-page</a></li>
-                                    <li><a class="dropdown-item" href="#">Sub-page</a></li>
-                                    <li><a class="dropdown-item" href="#">Sub-page</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown pe-4">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Shop
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="#">Sub-page</a></li>
-                                    <li><a class="dropdown-item" href="#">Sub-page</a></li>
-                                    <li><a class="dropdown-item" href="#">Sub-page</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item pe-4">
-                                <a class="nav-link" href="#">About</a>
-                            </li>
-                            <li class="nav-item pe-4">
-                                <a class="nav-link" href="#">Blog</a>
-                            </li>
-                            <li class="nav-item pe-4">
-                                <a class="nav-link" href="#">Contact</a>
-                            </li>
-                            <li class="nav-item dropdown pe-4">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Shop by brand
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="#">Sub-page</a></li>
-                                    <li><a class="dropdown-item" href="#">Sub-page</a></li>
-                                    <li><a class="dropdown-item" href="#">Sub-page</a></li>
-                                </ul>
+                            <li class="nav-item dropdown pe-4" v-for="(menuItem, i) in menu" :key="i">
+                                <div v-if="menuItem.secondLevel.length !== 0">
+                                    <a  class="nav-link dropdown-toggle"
+                                        :class="{active: menuItem.isActive}"
+                                        href="#"
+                                        id="navbarDropdownMenuLink"
+                                        role="button"
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false"
+                                        aria-current="page">
+                                            {{menuItem.firstLevel}}
+                                    </a>
+                                    <ul class="dropdown-menu"
+                                        aria-labelledby="navbarDropdownMenuLink">
+                                            <li>
+                                                <a class="dropdown-item" href="#" v-for="(menuItemSecond, i) in menuItem.secondLevel" :key="i">{{menuItemSecond}}</a>
+                                            </li>
+                                    </ul>
+                                </div>
+                                <div v-else>
+                                    <a  class="nav-link"
+                                        href="#">
+                                            {{menuItem.firstLevel}}
+                                    </a>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -103,6 +87,44 @@ export default {
 
     // Name
     name: "TheHeader",
+
+    // Data
+    data(){
+        return {
+            menu: [
+                {
+                    firstLevel: "Home",
+                    secondLevel: ["Sub-page","Sub-page","Sub-page"],
+                    isActive: true,
+                },
+                {
+                    firstLevel: "Shop",
+                    secondLevel: ["Sub-page","Sub-page","Sub-page"],
+                    isActive: false,
+                },
+                {
+                    firstLevel: "About",
+                    secondLevel: [],
+                    isActive: false,
+                },
+                {
+                    firstLevel: "Blog",
+                    secondLevel: [],
+                    isActive: false,
+                },
+                {
+                    firstLevel: "Contact",
+                    secondLevel: [],
+                    isActive: false,
+                },
+                {
+                    firstLevel: "Shop by brand",
+                    secondLevel: ["Sub-page","Sub-page","Sub-page"],
+                    isActive: false,
+                },
+            ]
+        }
+    }
 
 }
 </script>
