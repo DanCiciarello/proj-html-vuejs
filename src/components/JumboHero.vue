@@ -31,8 +31,18 @@
         </div>
 
         <!-- Hero CTA -->
-        <div>
-
+        <div class="cdHeroCta">
+            <div class="container d-flex justify-content-center">
+                <div>
+                    <img src="../assets/img/food-transparent-5.png" alt="Dog Food">
+                </div>
+                <div class="d-flex align-items-center">
+                    <span>
+                        Get $25 OFF your first purchase of our homemade pet food!
+                        <a href="#" class="text-white ps-4">Visit the shop</a>
+                    </span>
+                </div>
+            </div>
         </div>
 
     </div>

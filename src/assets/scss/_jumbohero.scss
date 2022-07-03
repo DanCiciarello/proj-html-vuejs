@@ -3,6 +3,7 @@
     background-color: #1E311F;
     background-image: url('@/assets/img/bg-transparent-3.png');
     color: #ffffff;
+    font-family: 'Work Sans', sans-serif;
     font-size: 14px;
 }
 
@@ -18,5 +19,22 @@
         .cdHeroWrapper {
             min-height: $headerHeight;
         }
+    }
+}
+
+.cdHeroCta {
+    background-color: #1E311F;
+    background-image: url('@/assets/img/bg-transparent-3.png');
+    color: #ffffff;
+
+    img {
+        width: 200px;
+        padding-top: 20px;
+        margin-right: 30px;
+    }
+
+    span {
+        font-size: 20px;
+        font-family: 'Work Sans', sans-serif;
     }
 }
