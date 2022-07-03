@@ -16,8 +16,16 @@
         <!-- Hero -->
         <div class="cdHero">
             <div class="cdHeroOverlay">
-                <div class="container cdHeroWrapper d-flex align-items-center text-white">
-                    <h6>Find the best animal supplies</h6>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="cdHeroWrapper d-flex flex-column justify-content-center align-items-start text-white">
+                                <h6>Find the best animal supplies</h6>
+                                <h1 class="mt-4 mb-5">We know animals are a part of your family, let us help take care of them.</h1>
+                                <button type="button" class="btn btn-light">Learn more about us</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
