@@ -1,5 +1,5 @@
 <template>
-    <nav>
+    <nav class="sticky-top">
 
         <!-- User Nav -->
         <div class="cdUserNav">
