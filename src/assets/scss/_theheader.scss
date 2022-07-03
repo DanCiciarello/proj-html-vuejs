@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+nav {
+    font-family: 'Work Sans', sans-serif;
+
+    .cdUserNav {
+        padding: 15px;
+        border-bottom: 1px solid #eeeeee;
+        font-family: 'Work Sans', sans-serif;
+    
+        .cdInputGroup {
+            width: 80%;
+    
+            .cdInputGroupIcon {
+                border-top-left-radius: 50px;
+                border-bottom-left-radius: 50px;
+                border: none;
+                background-color: #F3F4F3;
+        
+                .fa-magnifying-glass {
+                    font-size: 0.7rem;
+                }
+            }
+        
+            .cdInputGroupText {
+                border: none;
+                border-top-right-radius: 50px;
+                border-bottom-right-radius: 50px;
+                background-color: #F3F4F3;
+            }
+        
+        }
+    }
+    
+    .cdMenuNav {
+        border-bottom: 1px solid #eeeeee;
+    }
+
+}
