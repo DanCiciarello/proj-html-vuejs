@@ -1,0 +1,18 @@
+.cdShopCard {
+    width: 100%;
+    aspect-ratio: 1/1.5;
+    background-color: $primary;
+    background-image: url('@/assets/img/bg-transparent-3.png');
+    background-repeat: no-repeat;
+
+    .cdShopCardDescription {
+        color: $tertiary;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .cdShopCardImg {
+        width: 60%;
+    }
+}

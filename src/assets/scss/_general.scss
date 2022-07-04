@@ -52,7 +52,7 @@ p {
     border: none;
 
     &:hover.btn-light {
-        background-color: #496E46;
+        background-color: $tertiary;
         color: #ffffff;
     }
 }
