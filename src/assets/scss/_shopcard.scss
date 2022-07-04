@@ -15,4 +15,9 @@
     .cdShopCardImg {
         width: 60%;
     }
+
+    &:hover {
+        transform: scale(103%);
+        transition: transform .2s linear;
+    }
 }
