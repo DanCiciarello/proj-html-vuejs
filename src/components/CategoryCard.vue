@@ -1,13 +1,17 @@
 <template>
     <div>
 
-        <div class="cdCategoryCard d-flex justify-content-center align-items-center">
-            <img :src="categoryImg" alt="Img">
-        </div>
-        <div class="text-center pt-4">
-            <h4>
-                {{categoryName}} ({{categoryQuantity}})
-            </h4>
+        <a href="#">
+            <div class="cdCategoryCard d-flex justify-content-center align-items-center">
+                <img :src="categoryImg" alt="Img">
+            </div>
+        </a>
+        <div class="cdCategoryCardInfo text-center pt-4">
+            <a href="#">
+                <h4>
+                    {{categoryName}} ({{categoryQuantity}})
+                </h4>
+            </a>
         </div>
 
     </div>
