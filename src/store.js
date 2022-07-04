@@ -71,6 +71,23 @@ export const state = Vue.observable({
             img: require("@/assets/img/product-11.jpg"),
         },
     ],
+    usersTestimonials: [
+        {
+            quote: "Auctor est habitasse amet nunc, interdum vel mattis sodales cras. Ut nulla quis nunc, tincidunt eu. Eu.",
+            name: "Lisa Smith, ThemeFusion",
+            img: require("@/assets/img/avatar-3-200x200.jpg"),
+        },
+        {
+            quote: "Donec sollicitudin molestie malesuada. Vivamus suscipit tortor eget felis porttitor volutpat vestibulum ac diam sit.",
+            name: "Melissa Green, ThemeFusion",
+            img: require("@/assets/img/avatar-1-200x200.jpg"),
+        },
+        {
+            quote: "Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Proin eget tortor risus vestibulum ante ipsum.",
+            name: "Sam Lewis, ThemeFusion",
+            img: require("@/assets/img/avatar-4-200x200.jpg"),
+        },
+    ],
     newProductsList: [
         {
             name: "Colored pet bed",
