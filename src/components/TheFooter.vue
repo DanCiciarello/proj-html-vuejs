@@ -57,7 +57,7 @@
                 </div>
                 <div class="text-center">
                     <a href="#" v-for="item in footerMenuSocial" :key="item.name">
-                        <i class="fa-brands pe-4 text-white" :class="item.icon"></i>
+                        <i class="fa-brands ps-4 pe-4 text-white" :class="item.icon"></i>
                     </a>
                 </div>
     
