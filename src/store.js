@@ -88,6 +88,28 @@ export const state = Vue.observable({
             img: require("@/assets/img/avatar-4-200x200.jpg"),
         },
     ],
+    recentArticlesList: [
+        {
+            img: require("@/assets/img/blog-1-800x800.jpg"),
+            title: "How to 'loose leash walk' your dog",
+            date: "April 21st, 2020",
+        },
+        {
+            img: require("@/assets/img/blog-2-800x800.jpg"),
+            title: "Stop cats from scratching furniture",
+            date: "April 19th, 2020",
+        },
+        {
+            img: require("@/assets/img/blog-3-800x800.jpg"),
+            title: "Where to buy the best pet food",
+            date: "April 18th, 2020",
+        },
+        {
+            img: require("@/assets/img/blog-4-800x800.jpg"),
+            title: "Proper care for your pet toys",
+            date: "April 17th, 2020",
+        },
+    ],
     newProductsList: [
         {
             name: "Colored pet bed",
