@@ -1,7 +1,7 @@
 <template>
     <div>
 
-        <div class="container mt-5">
+        <div class="container my-5">
             <div class="cdNewArrivalsWeekly">
                 <div class="cdOverlay d-flex flex-column align-items-center justify-content-center text-white">
                     <h6>Find the best animal supplies</h6>
