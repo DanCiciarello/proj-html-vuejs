@@ -122,6 +122,25 @@ export const state = Vue.observable({
             btnCta: "View all food products",
         },
     ],
+    shopUspList: [
+        {
+            icon: "fa-solid fa-truck",
+            text: "Free worldwide deliveries",
+        },
+        {
+            icon: "fa-solid fa-map",
+            text: "Find stores near you",
+        },
+        {
+            icon: "fa-solid fa-dollar-sign",
+            text: "Best prices guarranteed",
+        },
+        {
+            icon: "fa-solid fa-credit-card",
+            text: "All credit card accepted",
+        },
+        
+    ],
     newProductsList: [
         {
             name: "Colored pet bed",
