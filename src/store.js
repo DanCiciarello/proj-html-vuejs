@@ -179,4 +179,50 @@ export const state = Vue.observable({
             img: require("@/assets/img/product-10.jpg"),
         },
     ],
+    footerMenuShop: [
+        "Bed", "Food", "Toys", "Transport"
+    ],
+    footerMenuLinks: [
+        "My Account", "Orders", "Checkout", "Cart"
+    ],
+    footerMenuNav: [
+        {
+            name: "Home",
+            isActive: true,
+        },
+        {
+            name: "About",
+            isActive: false,
+        },
+        {
+            name: "Blog",
+            isActive: false,
+        },
+        {
+            name: "Contact",
+            isActive: false,
+        },
+        {
+            name: "Shop",
+            isActive: false,
+        },
+    ],
+    footerMenuSocial: [
+        {
+            name: "Facebook",
+            icon: "fa-facebook-f"
+        },
+        {
+            name: "Twitter",
+            icon: "fa-twitter"
+        },
+        {
+            name: "Instagram",
+            icon: "fa-instagram"
+        },
+        {
+            name: "YouTube",
+            icon: "fa-youtube"
+        },
+    ]
 })
