@@ -6,7 +6,7 @@
             <!-- Section title -->
             <div class="d-flex justify-content-between">
                 <div>
-                    <h5 class="">All-time best sellers</h5>
+                    <h5>All-time best sellers</h5>
                     <h2>Items everyone loves</h2>
                 </div>
                 <div class="d-flex align-items-center">
