@@ -1,6 +1,6 @@
 .cdHeaderUsps {
     padding: 15px 0;
-    background-color: #1E311F;
+    background-color: $primary;
     background-image: url('@/assets/img/bg-transparent-3.png');
     color: #ffffff;
     font-family: 'Work Sans', sans-serif;
@@ -23,7 +23,7 @@
 }
 
 .cdHeroCta {
-    background-color: #1E311F;
+    background-color: $primary;
     background-image: url('@/assets/img/bg-transparent-3.png');
     color: #ffffff;
 
