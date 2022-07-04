@@ -6,6 +6,16 @@
             <a href="#">
                 <img :src="shopItemImg" :alt="shopItemName">
             </a>
+            <div class="cdShopItemOverlay d-flex flex-column justify-content-center align-items-center">
+                <div class="cdShopItemOverlayRound">
+                    <a href="#">
+                        <i class="fa-regular fa-circle-check fa-2xl text-white"></i>
+                    </a>
+                </div>
+                <a href="#">
+                    <h6 class="text-white pt-2">View cart</h6>
+                </a>
+            </div>
         </div>
 
         <!-- Product info -->
