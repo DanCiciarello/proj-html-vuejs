@@ -10,7 +10,9 @@
             </div>
             <div class="row">
                 <div class="col-3" v-for="(item, i) in categoryList" :key="i">
-                    <CategoryCard :category-name="categoryList[i].name" :category-quantity="categoryList[i].quantity"/>
+                    <CategoryCard   :category-name="categoryList[i].name"
+                                    :category-quantity="categoryList[i].quantity"
+                                    :category-img="categoryList[i].img"/>
                 </div>
             </div>
         </div>

@@ -1,8 +1,14 @@
 <template>
     <div>
 
-        {{categoryName}}
-        {{categoryQuantity}}
+        <div class="cdCategoryCard d-flex justify-content-center align-items-center">
+            <img :src="categoryImg" alt="Img">
+        </div>
+        <div class="text-center pt-4">
+            <h4>
+                {{categoryName}} ({{categoryQuantity}})
+            </h4>
+        </div>
 
     </div>
 </template>
@@ -18,6 +24,7 @@ export default {
     props: {
         categoryName: String,
         categoryQuantity: Number,
+        categoryImg: String,
     },
 
 }
