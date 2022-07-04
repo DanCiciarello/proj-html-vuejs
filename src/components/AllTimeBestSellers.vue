@@ -1,25 +1,58 @@
 <template>
-    <div>
+    <div class="cdBestSellers">
 
         <div class="container py-5">
+
+            <!-- Section title -->
             <div class="d-flex justify-content-between">
-                <div>Prova</div>
-                <div>Prova</div>
+                <div>
+                    <h5 class="">All-time best sellers</h5>
+                    <h2>Items everyone loves</h2>
+                </div>
+                <div class="d-flex align-items-center">
+                    <button type="button" class="btn btn-dark">View all products</button>
+                </div>
             </div>
+
+            <!-- Card list -->
+            <div class="row py-5">
+                <div class="col-3" v-for="(item, i) in bestSellersList" :key="i">
+                    <ShopItem />
+                </div>
+            </div>
+
         </div>
 
     </div>
 </template>
 
 <script>
-export default {
 
+// Import
+import ShopItem from './ShopItem.vue';
+import {state} from "../store";
+
+// Export
+export default {
     // Name
     name: "AllTimeBestSellers",
+
+    // Components
+    components: { ShopItem },
+
+    // Computed
+    computed: {
+        bestSellersList(){
+            return state.bestSellersList;
+        }
+    }
 
 }
 </script>
 
 <style lang="scss">
+
+@import "../assets/scss/variables";
+@import "../assets/scss/bestsellers";
 
 </style>
