@@ -66,6 +66,10 @@ p {
     &.btn-dark {
         background-color: $tertiary;
     }
+
+    &:hover.btn-dark {
+        background-color: $primary;
+    }
 }
 
 // Overlay
