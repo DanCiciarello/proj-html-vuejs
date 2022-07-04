@@ -110,6 +110,18 @@ export const state = Vue.observable({
             date: "April 17th, 2020",
         },
     ],
+    shopBoxList: [
+        {
+            subtitle: "Find the best animal supplies",
+            title: "Popular accessories",
+            btnCta: "View all toys accessories",
+        },
+        {
+            subtitle: "Find the best food",
+            title: "New food arrival",
+            btnCta: "View all food products",
+        },
+    ],
     newProductsList: [
         {
             name: "Colored pet bed",
