@@ -1,5 +1,14 @@
 <template>
-    <div></div>
+    <div>
+
+        <div class="container">
+
+            <h2>Get the best tips & tricks</h2>
+            
+
+        </div>
+
+    </div>
 </template>
 
 <script>
