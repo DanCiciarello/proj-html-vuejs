@@ -1,5 +1,14 @@
 <template>
-    <div></div>
+    <div>
+
+        <div class="container py-5">
+            <div class="d-flex justify-content-between">
+                <div>Prova</div>
+                <div>Prova</div>
+            </div>
+        </div>
+
+    </div>
 </template>
 
 <script>
