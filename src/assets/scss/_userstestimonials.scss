@@ -1,0 +1,20 @@
+.cdUsersTestimonials {
+    background-color: $primary;
+    background-image: url('@/assets/img/bg-transparent-3.png');
+    background-repeat: repeat-x;
+    padding: 100px 0 250px 0;
+}
+
+.testimonialImg {
+
+    img {
+        width: 80px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+}
+
+.testimonialInfo {
+    padding: 0 30px;
+}
