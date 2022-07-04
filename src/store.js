@@ -44,5 +44,69 @@ export const state = Vue.observable({
             img: require("@/assets/img/food-transparent-16.png"),
             btnCta: "Shop frozen food",
         },
-    ]
+    ],
+    bestSellersList: [
+        {
+            name: "Transport cage",
+            discount: null,
+            price: "$25.00",
+            img: require("@/assets/img/product-21.jpg"),
+        },
+        {
+            name: "Dog leash",
+            discount: null,
+            price: "$25.00",
+            img: require("@/assets/img/product-20.jpg"),
+        },
+        {
+            name: "Animal transport cage",
+            discount: "$35.00",
+            price: "$25.00",
+            img: require("@/assets/img/product-16.jpg"),
+        },
+        {
+            name: "Colorful cat leash",
+            discount: null,
+            price: "$12.00",
+            img: require("@/assets/img/product-11.jpg"),
+        },
+    ],
+    newProductsList: [
+        {
+            name: "Colored pet bed",
+            discount: null,
+            price: "$18.00 - $26.00",
+            img: require("@/assets/img/product-8.jpg"),
+        },
+        {
+            name: "Colorful ball set",
+            discount: null,
+            price: "$29.00",
+            img: require("@/assets/img/product-2.jpg"),
+        },
+        {
+            name: "Dog bone",
+            discount: "$29.00",
+            price: "$18.00",
+            img: require("@/assets/img/product-3.jpg"),
+        },
+        {
+            name: "Animal transport bag",
+            discount: null,
+            price: "$29.00",
+            img: require("@/assets/img/product-4.jpg"),
+        },
+        {
+            name: "Animal transport cage",
+            discount: null,
+            price: "$35.00",
+            img: require("@/assets/img/product-5.jpg"),
+        },
+        {
+            name: "Closable cat litter",
+            discount: null,
+            price: "$16.00",
+            img: require("@/assets/img/product-10.jpg"),
+        },
+    ],
 })
