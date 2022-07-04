@@ -17,7 +17,11 @@
             <!-- Card list -->
             <div class="row py-5">
                 <div class="col-3" v-for="(item, i) in bestSellersList" :key="i">
-                    <ShopItem />
+                    <ShopItem   :shop-item-img="item.img"
+                                :shop-item-name="item.name"
+                                :shop-item-price="item.price"
+                                :shop-item-discount="item.discount"
+                    />
                 </div>
             </div>
 

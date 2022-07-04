@@ -2,4 +2,32 @@
     width: 100%;
     aspect-ratio: 1/1;
     background-color: $secondary;
+
+    img {
+        width: 100%;
+    }
+
+}
+
+.cdShopItemInfo {
+
+    a {
+        text-decoration: none;
+    }
+    
+    h4:hover {
+        color: $primary;
+    }
+
+    p {
+        color: $tertiary;
+
+        .cdShopItemInfoDiscount {
+            color: black;
+            font-size: 11px;
+            text-decoration: line-through;
+        }
+
+    }
+
 }
