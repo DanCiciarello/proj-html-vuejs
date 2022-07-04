@@ -3,6 +3,12 @@
 
         <div class="cdBlogItemImg">
             <img :src="blogItem.img" :alt="blogItem.title">
+            <div class="cdBlogItemImgOverlay d-flex flex-column justify-content-center text-center">
+                <a href="#">
+                    <h5 class="text-white">{{blogItem.title}}</h5>
+                    <span class="cdBlogItemCategory text-white">Tips & Tricks</span>
+                </a>
+            </div>
         </div>
 
         <div class="cdBlogItemInfo mt-4">
