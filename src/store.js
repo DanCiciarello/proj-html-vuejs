@@ -25,4 +25,24 @@ export const state = Vue.observable({
             img: require("@/assets/img/product-4-500x500.jpg"),
         }
     ],
+    shopCardsList: [
+        {
+            name: "Kibble",
+            description: "Dry dog food",
+            img: require("@/assets/img/food-transparent-18.png"),
+            btnCta: "Shop dry food",
+        },
+        {
+            name: "Moist",
+            description: "Canned dog food",
+            img: require("@/assets/img/food-transparent-17.png"),
+            btnCta: "Shop moist food",
+        },
+        {
+            name: "Frozen",
+            description: "Freeze-Dried dog food",
+            img: require("@/assets/img/food-transparent-16.png"),
+            btnCta: "Shop frozen food",
+        },
+    ]
 })
