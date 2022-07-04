@@ -9,8 +9,8 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-3">
-                    
+                <div class="col-3" v-for="(item, i) in categoryList" :key="i">
+                    <CategoryCard :category-name="categoryList[i].name" :category-quantity="categoryList[i].quantity"/>
                 </div>
             </div>
         </div>
@@ -19,12 +19,28 @@
 </template>
 
 <script>
-export default {
 
+// Import
+import CategoryCard from './CategoryCard.vue';
+import {state} from "../store";
+
+// Export
+export default {
     // Name
     name: "BrowseCategory",
 
+    // Components
+    components: { CategoryCard },
+
+    // Computed
+    computed: {
+        categoryList(){
+            return state.categoryList;
+        }
+    },
+
 }
+
 </script>
 
 <style lang="scss" scoped>
