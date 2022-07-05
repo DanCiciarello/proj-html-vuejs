@@ -23,9 +23,15 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 
 @import "../assets/scss/variables";
-@import "../assets/scss/newarrivals";
+
+.cdNewArrivalsWeekly {
+    width: 100%;
+    aspect-ratio: 1/.4;
+    background-image: url('@/assets/img/banner-3-2x-scaled.jpg');
+    background-size: cover;
+}
 
 </style>

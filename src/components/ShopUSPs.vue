@@ -44,6 +44,11 @@ export default {
 <style lang="scss">
 
 @import "../assets/scss/variables";
-@import "../assets/scss/shopusps";
+
+.cdShopUspContainer {
+    background-color: $primary;
+    background-image: url('@/assets/img/bg-transparent-3.png');
+    background-repeat: repeat-x;
+}
 
 </style>

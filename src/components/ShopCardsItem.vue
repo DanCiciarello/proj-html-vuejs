@@ -31,6 +31,6 @@ export default {
 <style lang="scss">
 
 @import "../assets/scss/variables";
-@import "../assets/scss/shopcard";
+@import "../assets/scss/shopcarditem";
 
 </style>

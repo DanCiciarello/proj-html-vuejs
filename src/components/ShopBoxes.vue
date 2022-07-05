@@ -46,6 +46,26 @@ export default {
 <style lang="scss">
 
 @import "../assets/scss/variables";
-@import "../assets/scss/shopbox";
+
+.cdShopBox {
+    width: 50%;
+    height: 50vh;
+
+    &:hover {
+        transform: scale(103%);
+        transition: transform .2s linear;
+    }
+
+    &.cdShopBoxLeft {
+        background-image: url('@/assets/img/banner-8-2x.jpg');
+        background-size: cover;
+    }
+
+    &.cdShopBoxRight {
+        background-image: url('@/assets/img/banner-9-2x.jpg');
+        background-size: cover;
+    }
+
+}
 
 </style>

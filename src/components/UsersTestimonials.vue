@@ -50,9 +50,15 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 
 @import "../assets/scss/variables";
-@import "../assets/scss/userstestimonials";
+
+.cdUsersTestimonials {
+    background-color: $primary;
+    background-image: url('@/assets/img/bg-transparent-3.png');
+    background-repeat: repeat-x;
+    padding: 100px 0 200px 0;
+}
 
 </style>

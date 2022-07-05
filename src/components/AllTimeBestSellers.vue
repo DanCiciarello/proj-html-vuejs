@@ -54,9 +54,15 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 
 @import "../assets/scss/variables";
-@import "../assets/scss/bestsellers";
+
+.cdBestSellers {
+
+    h5 {
+        color: $tertiary;
+    }
+}
 
 </style>
